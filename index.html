@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+  <title>Pranjal Jain | Data Analyst Portfolio</title>
+</head>
+
+<body id = "top" class="bg-[#F9FCFB] text-gray-900 ">
+
+
+    <!-- Navbar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-700">Pranjal Jain</h1>
+    
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 items-center text-gray-600 font-medium">
+      <li><a href="#projects" class="hover:text-green-700">Projects</a></li>
+      <li><a href="#skills" class="hover:text-green-700">Skills</a></li>
+      <li><a href="#about" class="hover:text-green-700">About</a></li>
+      <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
+      
+      <!-- Resume Button -->
+      <li>
+        <a href="Professional CV Resume.pdf" download
+           class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">
+          Download Resume
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Icon -->
+    <button id="menu-btn" class="md:hidden text-3xl text-green-700">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 text-gray-600 font-medium">
+    <a href="#projects" class="block py-2 hover:text-green-700">Projects</a>
+    <a href="#skills" class="block py-2 hover:text-green-700">Skills</a>
+    <a href="#about" class="block py-2 hover:text-green-700">About</a>
+    <a href="#contact" class="block py-2 hover:text-green-700">Contact</a>
+
+    <!-- Resume Button in Mobile -->
+    <a href="resume.pdf" download
+       class="block mt-2 bg-green-600 text-white text-center px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">
+      Download Resume
+    </a>
+  </div>
+</nav>
+
+
+
+<!-- Hero Section with Chart Background and Tools -->
+<section class="relative py-20 px-6 bg-[#F5FAF8] overflow-hidden" data-aos="fade-up">
+
+  <!-- Chart Background SVG -->
+  <svg class="absolute top-0 left-0 w-full h-full z-0 opacity-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#16a34a" fill-opacity="0.5" d="M0,192L80,181.3C160,171,320,149,480,133.3C640,117,800,107,960,117.3C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+  </svg>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+    <!-- Left Text -->
+    <div class="flex-1 mb-12 md:mb-0">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-4">Got Data? I’ve Got Insights.</h2>
+      <p class="text-gray-700 text-lg md:text-xl max-w-2xl">
+        I'm <span class="font-semibold text-green-700">Pranjal Jain</span> — a B.Tech CSE student passionate about turning raw data into powerful visual stories using <span class="font-semibold">Python, SQL, Excel, and Power BI</span>.
+      </p>
+      <br>
+      <!-- <a href="#projects" class="bg-green-700 text-white px-6 py-3 rounded-md shadow hover:bg-green-800 transition">
+        View My Projects
+      </a> -->
+    </div>
+    
+
+    <!-- Right Image -->
+    <div class="flex-1 text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="w-64 mx-auto" />
+    </div>
+  </div>
+</section>
+
+
+<!-- Counter Section -->
+
+
+<section class="bg-gray-100 py-8 text-center">
+  
+  <div class="max-w-4xl mx-auto grid grid-cols-3 gap-6 font-bold text-3xl">
+
+    <!-- Projects -->
+    <div>
+      <span id="projects">0</span><br>
+      <span class="text-sm font-normal">Projects</span>
+    </div>
+
+    <!-- Certificates (with left border) -->
+    <div class="border-l-2 border-gray-400">
+      <span id="certs">0</span><br>
+      <span class="text-sm font-normal">Certificates</span>
+    </div>
+
+    <!-- Skills (with left border) -->
+    <div class="border-l-2 border-gray-400">
+      <span id="skills">0</span><br>
+      <span class="text-sm font-normal">Skills</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+<script>
+  function counter(id, end, duration = 2000) {
+    let start = 0;
+    const step = Math.ceil(duration / end);
+    const el = document.getElementById(id);
+    const interval = setInterval(() => {
+      el.textContent = start;
+      if (start >= end) clearInterval(interval);
+      start++;
+    }, step);
+  }
+
+  counter("projects", 3);
+  counter("certs", 3);
+  counter("skills", 15);
+</script>
+
+
+
+<a href="#contact" class="fixed bottom-6 Left bg-green-600 text-white px-4 py-3 rounded-full shadow-xl hover:bg-green-700 z-50 animate-bounce">
+  📞 Contact Now
+</a>
+
+
+
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 px-6 bg-white">
+  <h2 class="text-3xl font-bold text-center text-green-700 mb-10">Projects</h2>
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+    <!-- Project Card -->
+    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl aos-init" data-aos="zoom-in-up">
+      <img src="https://via.placeholder.com/400x200" alt="Project Image" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Amazon Web Scraper</h3>
+        <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p>
+        <!-- <div class="flex flex-wrap gap-2 text-xs mb-4">
+          <span class="bg-green-500 text-white px-2 py-1 rounded">Python</span>
+          <span class="bg-green-500 text-white px-2 py-1 rounded">BeautifulSoup</span>
+          <span class="bg-green-500 text-white px-2 py-1 rounded">Flask</span>
+        </div> -->
+        <div class="flex justify-between">
+          <a href="#" target="_blank" class="text-white bg-green-700 hover:bg-green-800 text-sm px-4 py-2 rounded transition">Live Demo</a>
+          <a href="#" target="_blank" class="text-green-700 hover:underline text-sm">GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more projects here -->
+
+  </div>
+</section>
+
+
+   <!-- Skills Section -->
+<section id="skills" class="py-12 px-6 bg-gray-100">
+  <h2 class="text-3xl font-bold mb-10 text-center" data-aos="fade-up">Skills</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- Python -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">Python</h3>
+      <p class="text-gray-700">Used for data analysis, web scraping, automation and data visualization.</p>
+    </div>
+
+    <!-- SQL -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold text-blue-700 mb-2">SQL</h3>
+      <p class="text-gray-700">Skilled in writing complex queries, joins, aggregations, and working with relational databases.</p>
+    </div>
+
+    <!-- Power BI -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">Power BI</h3>
+      <p class="text-gray-700">Created dashboards with slicers, KPIs, filters, DAX measures, and clean layouts.</p>
+    </div>
+
+    <!-- Excel -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">Excel</h3>
+      <p class="text-gray-700">Proficient in formulas, charts, pivot tables, data cleaning, and lookup functions.</p>
+    </div>
+
+    <!-- Pandas -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">Pandas</h3>
+      <p class="text-gray-700">DataFrame operations, filtering, grouping, joining, and reshaping large datasets.</p>
+    </div>
+
+    <!-- NumPy -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="500">
+      <h3 class="text-xl font-semibold text-blue-700 mb-2">NumPy</h3>
+      <p class="text-gray-700">Efficient numerical operations and support for multi-dimensional arrays and matrices.</p>
+    </div>
+
+    <!-- Matplotlib -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">Matplotlib</h3>
+      <p class="text-gray-700">Plotting line, bar, scatter, and histogram charts for data visualization.</p>
+    </div>
+
+    <!-- Seaborn -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="700">
+      <h3 class="text-xl font-semibold text-cyan-700 mb-2">Seaborn</h3>
+      <p class="text-gray-700">Built statistical charts like heatmaps, pair plots, and box plots.</p>
+    </div>
+
+    <!-- GitHub -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="800">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">GitHub</h3>
+      <p class="text-gray-700">Version control, project collaboration, and publishing projects with Git.</p>
+    </div>
+
+    <!-- Web Scraping -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="900">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">Web Scraping</h3>
+      <p class="text-gray-700">Extracted real-time data from websites using BeautifulSoup and Requests.</p>
+    </div>
+
+    <!-- Google Colab -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1000">
+      <h3 class="text-xl font-semibold text-yellow-600 mb-2">Google Colab</h3>
+      <p class="text-gray-700">Notebook-based development, running Python scripts on cloud resources.</p>
+    </div>
+
+    <!-- Jupyter Notebook -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1100">
+      <h3 class="text-xl font-semibold text-orange-700 mb-2">Jupyter Notebook</h3>
+      <p class="text-gray-700">Used for experimenting and documenting Python code, Markdown integration.</p>
+    </div>
+
+    <!-- Cloud -->
+    <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1200">
+      <h3 class="text-xl font-semibold text-sky-700 mb-2">Cloud</h3>
+      <p class="text-gray-700">Worked with Colab and cloud-hosted datasets. Basic understanding of cloud environments.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="py-12 px-6 bg-white">
+  <h2 class="text-3xl font-bold mb-10 text-center text-green-700">Certifications</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+    <!-- Python Certificate -->
+    <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+      <h3 class="text-xl font-semibold text-green-800">Python Certificate</h3>
+      <p class="text-gray-700 text-sm mt-2">Completed: 2024</p>
+      <a href="#" target="_blank" class="text-green-600 hover:underline mt-2 inline-block">View Certificate</a>
+    </div>
+
+    <!-- NPTEL Data Science -->
+    <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+      <h3 class="text-xl font-semibold text-green-800">NPTEL: Data Science for Engineering</h3>
+      <p class="text-gray-700 text-sm mt-2">NPTEL | Completed: 2024</p>
+      <a href="Professional CV Resume.pdf" target="_blank" class="text-green-600 hover:underline mt-2 inline-block">View Certificate</a>
+    </div>
+
+    <!-- IBM Cybersecurity -->
+    <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
+      <h3 class="text-xl font-semibold text-green-800">IBM Cybersecurity</h3>
+      <p class="text-gray-700 text-sm mt-2">IBM | Completed: 2024</p>
+      <a href="#" target="_blank" class="text-green-600 hover:underline mt-2 inline-block">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- About Me Section -->
+<section id="about" class="py-16 px-6 bg-white text-gray-800">
+  <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-6">About Me</h2>
+    <p class="text-lg md:text-xl leading-relaxed">
+      Hey there! I'm <span class="font-semibold text-green-700">Pranjal Jain</span>, a <span class="font-medium">B.Tech Computer Science</span> student with a strong curiosity for data and the stories it tells.
+    </p>
+    <p class="mt-4 text-md md:text-lg">
+      I specialize in <span class="font-semibold">Data Analysis</span> using tools like <span class="text-blue-600">Python</span>, <span class="text-yellow-600">Power BI</span>, <span class="text-green-600">Excel</span>, and <span class="text-indigo-600">SQL</span>. Whether it’s uncovering hidden trends or creating dashboards, I love turning raw data into clear, actionable insights.
+    </p>
+    <p class="mt-4 text-md md:text-lg">
+      Outside of tech, I enjoy exploring new tech trends, helping others learn, and constantly improving myself. Let’s build something data-driven together!
+    </p>
+
+    <div class="mt-10">
+      <a href="Professional CV Resume.pdf" download
+         class="inline-block bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
+         Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="bg-[#F9FCFB] text-gray-900 px-6 py-12 md:px-16" id="contact" data-aos="zoom-in">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Do You Have Any Query?<br>Please Drop a Message</h2>
+    <!-- <p class="text-center text-gray-700 mb-10">
+      Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
+    </p> -->
+
+    <!-- Contact Info -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <div>
+        <h3 class="text-lg font-semibold mb-2">📍 Address:</h3>
+        <p>Pranjal Pathshala, Near kapoor Bangla, Prem Nagar <br>Satna, M.P<br>Pincode: 485001</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-2">📞 Phone:</h3>
+        <a href="tel:+91 94794 80495">+91 94794 80495</a>
+
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-2">📧 Email:</h3>
+        <p></p>
+        <a href="mailto:pranjaljain2422@gmail.com">pranjaljain2422@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-4 mb-10">
+      <a href="#" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
+        <img src="github-icon.png" alt="GitHub" class="w-6 h-6">
+      </a>
+      <a href="#" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
+        <img src="instagram-icon.png" alt="Instagram" class="w-6 h-6">
+      </a>
+      <a href="#" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
+        <img src="linkedin-icon.png" alt="LinkedIn" class="w-6 h-6">
+      </a>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="grid gap-6 bg-white p-8 rounded-xl shadow-lg">
+      <div>
+        <label class="block font-semibold mb-1">Name</label>
+        <input type="text" placeholder="e.g. Pranjal Jain"
+               class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Email</label>
+        <input type="email" placeholder="e.g. pranjal@mail.com"
+               class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Phone</label>
+        <input type="tel" placeholder="Phone Number"
+               class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Message</label>
+        <textarea placeholder="Write message..."
+                  class="w-full border border-gray-300 p-3 rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+      </div>
+      <button type="submit"
+              class="bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition w-full md:w-auto">
+        SEND
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Back to Top Button -->
+<a href="#top" 
+   class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300"
+   title="Go to top">
+  <!-- Arrow Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+       viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</a>
+
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white text-center py-4 mt-12">
+       <p>Pranjal Jain</p>
+    </footer>
+
+    
+
+    <!-- Toggle Menu Script -->
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+
+</body>
+</html>
