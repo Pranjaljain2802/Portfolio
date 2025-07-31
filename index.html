@@ -9,6 +9,7 @@
   html {
     scroll-behavior: smooth;
   }
+  
 </style>
 
   <title>Pranjal Jain | Data Analyst Portfolio</title>
@@ -31,7 +32,7 @@
       
       <!-- Resume Button -->
       <li>
-        <a href="Professional CV Resume.pdf" download
+        <a href="assets/Pranjal jain Resume.pdf" download
            class="bg-cyan-600 text-white px-4 py-2 rounded-md hover:bg-cyan-700 transition duration-300">
           Download Resume
         </a>
@@ -60,36 +61,76 @@
 </nav>
 
 
+<!-- Hero Section with Responsive Chart -->
+<section style="position: relative; background-color: #F5FAF8; padding: 60px 20px 120px 20px; overflow: hidden; text-align: center;" data-aos="fade-up">
 
-<!-- Hero Section with Chart Background and Tools -->
-<section class="relative py-20 px-6 bg-[#F5FAF8] overflow-hidden" data-aos="fade-up">
-
-  <!-- Chart Background SVG -->
-  <!-- <svg class="absolute top-0 left-0 w-full h-full z-0 opacity-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#111" fill-opacity="1" d="M0,192L80,181.3C160,171,320,149,480,133.3C640,117,800,107,960,117.3C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-  </svg> -->
-
-  <!-- Content -->
-  <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-    <!-- Left Text -->
-    <div class="flex-1 mb-12 md:mb-0">
-      <h2 class="text-3xl md:text-4xl font-bold text-cyan-700 mb-4">Got Data? I’ve Got Insights.</h2>
-      <p class="text-gray-700 text-lg md:text-xl max-w-2xl">
-        I'm <span class="font-semibold text-cyan-700">Pranjal Jain</span> — a B.Tech CSE student passionate about turning raw data into powerful visual stories using <span class="font-semibold">Python, SQL, Excel, and Power BI</span>.
-      </p>
-      <br>
-      <!-- <a href="#projects" class="bg-cyan-700 text-white px-6 py-3 rounded-md shadow hover:bg-cyan-800 transition">
-        View My Projects
-      </a> -->
-    </div>
+  <!-- Chart Background (Responsive & Pushed Down) -->
+  <svg style="position: absolute; bottom: 0; left: 0; width: 100%; height: 200px; opacity: 0.3; z-index: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none">
     
+    <!-- Light Grid -->
+    <!-- Horizontal -->
+    <g stroke="#ccc" stroke-width="0.5">
+      <line x1="0" y1="50" x2="800" y2="50"/>
+      <line x1="0" y1="100" x2="800" y2="100"/>
+      <line x1="0" y1="150" x2="800" y2="150"/>
+      <line x1="0" y1="200" x2="800" y2="200"/>
+      <line x1="0" y1="250" x2="800" y2="250"/>
+      <line x1="0" y1="300" x2="800" y2="300"/>
+      <line x1="0" y1="350" x2="800" y2="350"/>
+    </g>
 
-    <!-- Right Image -->
-    <!-- <div class="flex-1 text-center rounded-full">
-      <img src="assets/ppp.png" alt="Profile" class="w-64 mx-auto rounded-full" />
-    </div> -->
+    <!-- Vertical -->
+    <g stroke="#ccc" stroke-width="0.5">
+      <line x1="50" y1="0" x2="50" y2="400"/>
+      <line x1="100" y1="0" x2="100" y2="400"/>
+      <line x1="150" y1="0" x2="150" y2="400"/>
+      <line x1="200" y1="0" x2="200" y2="400"/>
+      <line x1="250" y1="0" x2="250" y2="400"/>
+      <line x1="300" y1="0" x2="300" y2="400"/>
+      <line x1="350" y1="0" x2="350" y2="400"/>
+      <line x1="400" y1="0" x2="400" y2="400"/>
+      <line x1="450" y1="0" x2="450" y2="400"/>
+      <line x1="500" y1="0" x2="500" y2="400"/>
+      <line x1="550" y1="0" x2="550" y2="400"/>
+      <line x1="600" y1="0" x2="600" y2="400"/>
+      <line x1="650" y1="0" x2="650" y2="400"/>
+      <line x1="700" y1="0" x2="700" y2="400"/>
+      <line x1="750" y1="0" x2="750" y2="400"/>
+    </g>
+
+    <!-- Area -->
+    <path fill="#089981" fill-opacity="0.3" d="M0,300 L100,250 L200,220 L300,270 L400,190 L500,230 L600,180 L700,210 L800,160 L800,400 L0,400 Z"/>
+
+    <!-- Line -->
+    <polyline fill="none" stroke="#089981" stroke-width="5"
+      points="0,300 100,250 200,220 300,270 400,190 500,230 600,180 700,210 800,160" />
+
+    <!-- Dots -->
+    <circle cx="100" cy="250" r="6" fill="#089981"/>
+    <circle cx="200" cy="220" r="6" fill="#089981"/>
+    <circle cx="300" cy="270" r="6" fill="#089981"/>
+    <circle cx="400" cy="190" r="6" fill="#089981"/>
+    <circle cx="500" cy="230" r="6" fill="#089981"/>
+    <circle cx="600" cy="180" r="6" fill="#089981"/>
+    <circle cx="700" cy="210" r="6" fill="#089981"/>
+    <circle cx="800" cy="160" r="6" fill="#089981"/>
+  </svg>
+
+  <!-- Text Content -->
+  <div style="position: relative; z-index: 1; max-width: 900px; margin: auto;">
+    <h1 style="font-size: 2.5rem; font-weight: bold; color: #089981; margin-bottom: 20px;">
+      Got Data? I’ve Got Insights.
+    </h1>
+    <p style="font-size: 1.2rem; color: #333; line-height: 1.6;">
+      I'm <strong style="color: #089981;">Pranjal Jain</strong> — a B.Tech CSE student passionate about turning raw data into powerful visual stories using <strong>Python, SQL, Excel, and Power BI</strong>.
+    </p>
   </div>
 </section>
+
+
+
+
+
 
 
 <!-- Counter Section -->
@@ -141,16 +182,6 @@
 
 
 
-<!-- <a href="#contact" class="fixed bottom-6 Left bg-cyan-600 text-white px-4 py-3 rounded-full shadow-xl hover:bg-cyan-700 z-0 animate-bounce">
-  📞 Contact Now
-</a> -->
-
-
-
-
-
-
-
     <!-- Projects Section -->
     <section id="projects" class="py-12 px-6 bg-white">
   <h2 class="text-3xl font-bold text-center text-cyan-700 mb-10">Projects</h2>
@@ -162,11 +193,29 @@
       <div class="p-6">
         <h3 class="text-xl font-semibold text-cyan-700 mb-2">Amazon Web Scraper</h3>
         <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p>
-        <!-- <div class="flex flex-wrap gap-2 text-xs mb-4">
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Python</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">BeautifulSoup</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Flask</span>
-        </div> -->
+        <div class="flex justify-between">
+          <!-- <a href="#" target="_blank" class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">Live Demo</a> -->
+          <a href="#" target="_blank" class="text-cyan-700 hover:underline text-sm">GitHub →</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl aos-init" data-aos="zoom-in-up">
+      <img src="https://via.placeholder.com/400x200" alt="Project Image" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Amazon Web Scraper</h3>
+        <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p>
+        <div class="flex justify-between">
+          <a href="#" target="_blank" class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">Live Demo</a>
+          <a href="#" target="_blank" class="text-cyan-700 hover:underline text-sm">GitHub →</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl aos-init" data-aos="zoom-in-up">
+      <img src="https://via.placeholder.com/400x200" alt="Project Image" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Amazon Web Scraper</h3>
+        <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p> 
         <div class="flex justify-between">
           <a href="#" target="_blank" class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">Live Demo</a>
           <a href="#" target="_blank" class="text-cyan-700 hover:underline text-sm">GitHub →</a>
@@ -178,49 +227,12 @@
       <div class="p-6">
         <h3 class="text-xl font-semibold text-cyan-700 mb-2">Amazon Web Scraper</h3>
         <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p>
-        <!-- <div class="flex flex-wrap gap-2 text-xs mb-4">
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Python</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">BeautifulSoup</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Flask</span>
-        </div> -->
         <div class="flex justify-between">
           <a href="#" target="_blank" class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">Live Demo</a>
           <a href="#" target="_blank" class="text-cyan-700 hover:underline text-sm">GitHub →</a>
         </div>
       </div>
-    </div>
-    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl aos-init" data-aos="zoom-in-up">
-      <img src="https://via.placeholder.com/400x200" alt="Project Image" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Amazon Web Scraper</h3>
-        <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p>
-        <!-- <div class="flex flex-wrap gap-2 text-xs mb-4">
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Python</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">BeautifulSoup</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Flask</span>
-        </div> -->
-        <div class="flex justify-between">
-          <a href="#" target="_blank" class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">Live Demo</a>
-          <a href="#" target="_blank" class="text-cyan-700 hover:underline text-sm">GitHub →</a>
-        </div>
-      </div>
-    </div>
-    <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl aos-init" data-aos="zoom-in-up">
-      <img src="https://via.placeholder.com/400x200" alt="Project Image" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-cyan-700 mb-2">Amazon Web Scraper</h3>
-        <p class="text-gray-700 mb-3 text-sm">Scrapes product data like price, reviews, and ratings using Python & BeautifulSoup.</p>
-        <!-- <div class="flex flex-wrap gap-2 text-xs mb-4">
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Python</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">BeautifulSoup</span>
-          <span class="bg-cyan-500 text-white px-2 py-1 rounded">Flask</span>
-        </div> -->
-        <div class="flex justify-between">
-          <a href="#" target="_blank" class="text-white bg-cyan-700 hover:bg-cyan-800 text-sm px-4 py-2 rounded transition">Live Demo</a>
-          <a href="#" target="_blank" class="text-cyan-700 hover:underline text-sm">GitHub →</a>
-        </div>
-      </div>
-    </div>
+    </div> --> 
 
     <!-- Add more projects here -->
 
@@ -322,15 +334,15 @@
     <!-- Python Certificate -->
     <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
       <h3 class="text-xl font-semibold text-cyan-800">Python Certificate</h3>
-      <p class="text-gray-700 text-sm mt-2">Completed: 2024</p>
-      <a href="#" target="_blank" class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
+      <p class="text-gray-700 text-sm mt-2">CRISP | Completed: 2024</p>
+      <a href="assets/Python Certificate.jpeg" target="_blank" class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
     </div>
 
     <!-- NPTEL Data Science -->
     <div class="bg-gray-100 rounded-xl p-6 shadow-lg" data-aos="zoom-in">
       <h3 class="text-xl font-semibold text-cyan-800">NPTEL: Data Science for Engineering</h3>
       <p class="text-gray-700 text-sm mt-2">NPTEL | Completed: 2024</p>
-      <a href="Professional CV Resume.pdf" target="_blank" class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
+      <a href="assets/Data_Science_for_Engineer.pdf" target="_blank" class="text-cyan-600 hover:underline mt-2 inline-block">View Certificate</a>
     </div>
 
     <!-- IBM Cybersecurity -->
@@ -360,7 +372,7 @@
     </p>
 
     <div class="mt-10">
-      <a href="Professional CV Resume.pdf" download
+      <a href="assets/Pranjal jain Resume.pdf" download
          class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
          Download Resume
       </a>
@@ -372,37 +384,39 @@
 <!-- Contact Section -->
 <section class="bg-[#F9FCFB] text-gray-900 px-6 py-12 md:px-16" id="contact" data-aos="zoom-in">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">Do You Have Any Query?<br>Please Drop a Message</h2>
-    <!-- <p class="text-center text-gray-700 mb-10">
-      Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
-    </p> -->
+    <h2 class="text-3xl font-bold mb-8 text-center">
+      Do You Have Any Query?<br>Please Drop a Message
+    </h2>
 
-    <!-- Contact Info -->
-    <div class="grid md:grid-cols-2 gap-8 mb-12">
-      <div>
-        <h3 class="text-lg font-semibold mb-2">📞 Phone:</h3>
-        <a href="tel:+91 94794 80495">+91 94794 80495</a>
-
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-2">📧 Email:</h3>
-        <p></p>
-        <a href="mailto:pranjaljain2422@gmail.com">pranjaljain2422@gmail.com</a>
-      </div>
-    </div>
+   
 
     <!-- Social Icons -->
-    <div class="flex justify-center gap-4 mb-10">
-      <a href="#" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
-        <img src="github-icon.png" alt="GitHub" class="w-6 h-6">
+    <div class="flex justify-center gap-6 mb-4">
+      
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/pranjal-jain2802" target="_blank" class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
       </a>
-      <a href="#" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
-        <img src="instagram-icon.png" alt="Instagram" class="w-6 h-6">
+      <!-- Gmail (optional) -->
+      <a href="mailto:pranjaljain2422@gmail.com" target="_blank" class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" class="w-6 h-6">
       </a>
-      <a href="#" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">
-        <img src="linkedin-icon.png" alt="LinkedIn" class="w-6 h-6">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/919479480495" target="_blank" class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6">
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/pranjaljain2422" target="_blank" class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/pranjaljain2422" target="_blank" class="bg-white p-3 rounded-full shadow hover:scale-110 transition">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6">
       </a>
     </div>
+  </div>
+</section>
+
 
     <!-- Contact Form -->
     <form class="grid gap-6 bg-white p-8 rounded-xl shadow-lg">
